@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Local build paths
+.pio/
+.reference/
+.vscode/
+.temp/
