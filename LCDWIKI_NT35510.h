@@ -1,8 +1,8 @@
 #ifndef _LCDWIKI_NT35510_
 #define _LCDWIKI_NT35510_
 
-#include <LCDWIKI_GUI.h> //Core graphics library
-#include <LCDWIKI_KBV.h> //Hardware-specific library
+#include <LCDWIKI_GUI/LCDWIKI_GUI.h> //Core graphics library
+#include <LCDWIKI_KBV/LCDWIKI_KBV.h> //Hardware-specific library
 #include <Adafruit_GFX.h>
 
 class LCDWIKI_NT35510 : public Adafruit_GFX
