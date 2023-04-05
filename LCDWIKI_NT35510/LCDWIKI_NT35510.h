@@ -2,8 +2,8 @@
 #define _LCDWIKI_NT35510_
 
 #include <Adafruit_GFX.h>
-#include "LCDWIKI_GUI/LCDWIKI_GUI.h" //Core graphics library
-#include "LCDWIKI_KBV/LCDWIKI_KBV.h" //Hardware-specific library
+#include <LCDWIKI_GUI.h> //Core graphics library
+#include <LCDWIKI_KBV.h> //Hardware-specific library
 
 class LCDWIKI_NT35510 : public Adafruit_GFX
 {
@@ -13,7 +13,7 @@ class LCDWIKI_NT35510 : public Adafruit_GFX
             m_modelID = modelID;
             m_lcdwiki_kbv = new LCDWIKI_KBV(modelID, CS, RS, WR, RD, RST); 
         }
-        void InitLCD(uint8_t orientation=0) 
+        void begin(uint8_t orientation=0) 
         {
             m_lcdwiki_kbv->reset();
             //uint16_t ID = m_lcdwiki_kbv->Read_ID();

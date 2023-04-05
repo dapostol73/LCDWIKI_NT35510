@@ -18,7 +18,7 @@
 #define pgm_read_byte(addr) (*(const unsigned char *)(addr))
 #define pgm_read_word(addr) (*(const unsigned short *)(addr))
 #endif
-#include "LCDWIKI_GUI/LCDWIKI_GUI.h"
+#include "LCDWIKI_GUI.h"
 
 // LCD controller chip identifiers
 #define ID_932X    0
